@@ -1,0 +1,252 @@
+root@client:~# apt update && apt install borgbackup -y
+Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:5 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Get:6 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1731 kB]
+Get:7 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [287 kB]
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [13.2 kB]
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [2251 kB]
+Get:10 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [388 kB]
+Get:11 http://archive.ubuntu.com/ubuntu jammy/universe Translation-en [5652 kB]
+Get:12 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [572 B]
+Get:13 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [890 kB]
+Get:14 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [175 kB]
+Get:15 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [19.0 kB]
+Get:16 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [37.2 kB]
+Get:17 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [7588 B]
+Get:18 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [228 B]
+Get:19 http://archive.ubuntu.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]
+Get:20 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [217 kB]
+Get:21 http://archive.ubuntu.com/ubuntu jammy/multiverse Translation-en [112 kB]
+Get:22 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B]
+Get:23 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1987 kB]
+Get:24 http://archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [348 kB]
+Get:25 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [17.8 kB]
+Get:26 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [2384 kB]
+Get:27 http://archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [410 kB]
+Get:28 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 c-n-f Metadata [604 B]
+Get:29 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1112 kB]
+Get:30 http://archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [260 kB]
+Get:31 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [26.0 kB]
+Get:32 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [43.3 kB]
+Get:33 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [10.8 kB]
+Get:34 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [444 B]
+Get:35 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [67.1 kB]
+Get:36 http://archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [11.0 kB]
+Get:37 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Get:38 http://archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:39 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [28.8 kB]
+Get:40 http://archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16.5 kB]
+Get:41 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [672 B]
+Get:42 http://archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 33.3 MB in 24s (1380 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+45 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libfuse2 python3-async-generator python3-llfuse python3-msgpack python3-outcome python3-packaging python3-pyfuse3 python3-sniffio
+  python3-sortedcontainers python3-trio
+Suggested packages:
+  borgbackup-doc python-llfuse-doc python-sortedcontainers-doc
+The following NEW packages will be installed:
+  borgbackup libfuse2 python3-async-generator python3-llfuse python3-msgpack python3-outcome python3-packaging python3-pyfuse3 python3-sniffio
+  python3-sortedcontainers python3-trio
+0 upgraded, 11 newly installed, 0 to remove and 45 not upgraded.
+Need to get 1743 kB of archives.
+After this operation, 7207 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy/main amd64 python3-msgpack amd64 1.0.3-1build1 [67.8 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/main amd64 python3-packaging all 21.3-1 [30.7 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy/universe amd64 borgbackup amd64 1.2.0-1 [792 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libfuse2 amd64 2.9.9-5ubuntu3 [90.3 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy/universe amd64 python3-async-generator all 1.10-3 [17.5 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy/universe amd64 python3-llfuse amd64 1.3.8+dfsg-2build1 [291 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy/universe amd64 python3-outcome all 1.1.0-1 [5820 B]
+Get:8 http://archive.ubuntu.com/ubuntu jammy/universe amd64 python3-sniffio all 1.2.0-1 [6438 B]
+Get:9 http://archive.ubuntu.com/ubuntu jammy/main amd64 python3-sortedcontainers all 2.1.0-2 [27.3 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy/universe amd64 python3-trio all 0.19.0-1 [238 kB]
+Get:11 http://archive.ubuntu.com/ubuntu jammy/universe amd64 python3-pyfuse3 amd64 3.2.0-3build1 [176 kB]
+Fetched 1743 kB in 2s (932 kB/s)
+Selecting previously unselected package python3-msgpack.
+(Reading database ... 64049 files and directories currently installed.)
+Preparing to unpack .../00-python3-msgpack_1.0.3-1build1_amd64.deb ...
+Unpacking python3-msgpack (1.0.3-1build1) ...
+Selecting previously unselected package python3-packaging.
+Preparing to unpack .../01-python3-packaging_21.3-1_all.deb ...
+Unpacking python3-packaging (21.3-1) ...
+Selecting previously unselected package borgbackup.
+Preparing to unpack .../02-borgbackup_1.2.0-1_amd64.deb ...
+Unpacking borgbackup (1.2.0-1) ...
+Selecting previously unselected package libfuse2:amd64.
+Preparing to unpack .../03-libfuse2_2.9.9-5ubuntu3_amd64.deb ...
+Unpacking libfuse2:amd64 (2.9.9-5ubuntu3) ...
+Selecting previously unselected package python3-async-generator.
+Preparing to unpack .../04-python3-async-generator_1.10-3_all.deb ...
+Unpacking python3-async-generator (1.10-3) ...
+Selecting previously unselected package python3-llfuse:amd64.
+Preparing to unpack .../05-python3-llfuse_1.3.8+dfsg-2build1_amd64.deb ...
+Unpacking python3-llfuse:amd64 (1.3.8+dfsg-2build1) ...
+Selecting previously unselected package python3-outcome.
+Preparing to unpack .../06-python3-outcome_1.1.0-1_all.deb ...
+Unpacking python3-outcome (1.1.0-1) ...
+Selecting previously unselected package python3-sniffio.
+Preparing to unpack .../07-python3-sniffio_1.2.0-1_all.deb ...
+Unpacking python3-sniffio (1.2.0-1) ...
+Selecting previously unselected package python3-sortedcontainers.
+Preparing to unpack .../08-python3-sortedcontainers_2.1.0-2_all.deb ...
+Unpacking python3-sortedcontainers (2.1.0-2) ...
+Selecting previously unselected package python3-trio.
+Preparing to unpack .../09-python3-trio_0.19.0-1_all.deb ...
+Unpacking python3-trio (0.19.0-1) ...
+Selecting previously unselected package python3-pyfuse3.
+Preparing to unpack .../10-python3-pyfuse3_3.2.0-3build1_amd64.deb ...
+Unpacking python3-pyfuse3 (3.2.0-3build1) ...
+Setting up python3-sniffio (1.2.0-1) ...
+Setting up python3-outcome (1.1.0-1) ...
+Setting up python3-async-generator (1.10-3) ...
+Setting up python3-sortedcontainers (2.1.0-2) ...
+Setting up libfuse2:amd64 (2.9.9-5ubuntu3) ...
+Setting up python3-packaging (21.3-1) ...
+Setting up python3-llfuse:amd64 (1.3.8+dfsg-2build1) ...
+Setting up python3-trio (0.19.0-1) ...
+Setting up python3-msgpack (1.0.3-1build1) ...
+Setting up python3-pyfuse3 (3.2.0-3build1) ...
+Setting up borgbackup (1.2.0-1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.8) ...
+Scanning processes...
+Scanning linux images...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@client:~# ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /root/.ssh/id_rsa
+Your public key has been saved in /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:ua/Jxg+FzNNKIlOny6o2XCvkydPmBtgnEyNSIwJ9/qQ root@client
+The key's randomart image is:
++---[RSA 3072]----+
+|o.               |
+|o + .            |
+|.o +  . .        |
+|o o ...= +       |
+|.+ oo+o S o      |
+|. * E+.+ =       |
+| = O .o.+        |
+|  X =. .o+       |
+| ..Oo  .+oo      |
++----[SHA256]-----+
+root@client:~#
+root@client:~# cat /root/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC0QvTeqp6Z+eH+DXaiB4D4r1od8o7X9oY2c1XuDYtAJ+MpyZ8bwYrROB4ClIP3dB16xcsXYsH5Ds9BhTlDyJBl3Fc4FChmvU9ydjRaCXUTkvlLLdl0Wn6JzgNE0YSYgG2VPofxW1kmaiMKuvNSFNMtCzGSmEM6czr5kt0YI19LcXc8DwL10dlGX+CnOVzxOkACBb493q+zcKliwthnXnliHgbIQFwDbyZua15VDYaIQpIwVc0Nz9HfdFcgJRyfTc1+1jg74Vl4jAwn3/2soAb6b/ZqVK8BZCYaZ2e+BW2eXT9K0s6rxM+aIwaahjV6X7LIxjZyyJtheBtGa6Tse1I6w/jpaPQwMT3sQewwkA1JbO6jREStjTuDm8uaxZs7hqZh2orjNeoPNW/BEeHsVV7fN4aHWJbvRcg73UfSG+fv8p0rd+TC2qgRDtrdDcbCa6lUqC2hZH6VTozUaqwkAcIUeSF0h+hUxr2KZqlpG3HoeCGvgEn2rtmUwD+V+VcNvO8= root@client
+root@client:~# borg init --encryption=repokey borg@192.168.0.181:/var/backup/
+The authenticity of host '192.168.0.181 (192.168.0.181)' can't be established.
+ED25519 key fingerprint is SHA256:deKbSgmuwrqysyz+dkKJ0AofzaUO9cvubFNzrCNMgHs.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Remote: Warning: Permanently added '192.168.0.181' (ED25519) to the list of known hosts.
+Enter new passphrase:
+Enter same passphrase again:
+Do you want your passphrase to be displayed for verification? [yN]: y
+Your passphrase (between double-quotes): "Otus123"
+Make sure the passphrase displayed above is exactly what you wanted.
+
+By default repositories initialized with this version will produce security
+errors if written to with an older version (up to and including Borg 1.0.8).
+
+If you want to use these older versions, you can disable the check by running:
+borg upgrade --disable-tam ssh://borg@192.168.0.181/var/backup
+
+See https://borgbackup.readthedocs.io/en/stable/changes.html#pre-1-0-9-manifest-spoofing-vulnerability for details about the security implications.
+
+IMPORTANT: you will need both KEY AND PASSPHRASE to access this repo!
+If you used a repokey mode, the key is stored in the repo, but you should back it up separately.
+Use "borg key export" to export the key, optionally in printable format.
+Write down the passphrase. Store both at safe place(s).
+
+root@client:~# borg create --stats borg@192.168.0.181:/var/backup/::"etc-{now:%Y-%m-%d_%H:%M:%S}" /etc
+Enter passphrase for key ssh://borg@192.168.0.181/var/backup:
+------------------------------------------------------------------------------
+Repository: ssh://borg@192.168.0.181/var/backup
+Archive name: etc-2024-08-21_06:59:01
+Archive fingerprint: ffa7930dc5d7fb83e0afe5d1935ce263cf1dfe4e9cd0c9ccbe815eaddfd54c75
+Time (start): Wed, 2024-08-21 06:59:09
+Time (end):   Wed, 2024-08-21 06:59:11
+Duration: 1.75 seconds
+Number of files: 693
+Utilization of max. archive size: 0%
+------------------------------------------------------------------------------
+                       Original size      Compressed size    Deduplicated size
+This archive:                2.11 MB            938.77 kB            915.30 kB
+All archives:                2.11 MB            938.16 kB            982.52 kB
+
+                       Unique chunks         Total chunks
+Chunk index:                     662                  684
+------------------------------------------------------------------------------
+root@client:~# borg list borg@192.168.0.181:/var/backup/
+Enter passphrase for key ssh://borg@192.168.0.181/var/backup:
+etc-2024-08-21_06:59:01              Wed, 2024-08-21 06:59:09 [ffa7930dc5d7fb83e0afe5d1935ce263cf1dfe4e9cd0c9ccbe815eaddfd54c75]
+root@client:~# vim /etc/systemd/system/borg-backup.service
+root@client:~# vim /etc/systemd/system/borg-backup.timer
+root@client:~# systemctl enable --now borg-backup.timer
+Created symlink /etc/systemd/system/timers.target.wants/borg-backup.timer → /etc/systemd/system/borg-backup.timer.
+root@client:~# systemctl enable --now borg-backup.service
+The unit files have no installation config (WantedBy=, RequiredBy=, Also=,
+Alias= settings in the [Install] section, and DefaultInstance= for template
+units). This means they are not meant to be enabled using systemctl.
+
+Possible reasons for having this kind of units are:
+• A unit may be statically enabled by being symlinked from another unit's
+  .wants/ or .requires/ directory.
+• A unit's purpose may be to act as a helper for some other unit which has
+  a requirement dependency on it.
+• A unit may be started when needed via activation (socket, path, timer,
+  D-Bus, udev, scripted systemctl call, ...).
+• In case of template units, the unit is meant to be enabled with some
+  instance name specified.
+root@client:~# systemctl start borg-backup.service
+root@client:~# systemctl list-timers --all
+NEXT                        LEFT              LAST                        PASSED   UNIT                           ACTIVATES                    >
+Wed 2024-08-21 07:02:30 UTC 50s left          n/a                         n/a      borg-backup.timer              borg-backup.service
+Wed 2024-08-21 07:04:16 UTC 2min 35s left     n/a                         n/a      systemd-tmpfiles-clean.timer   systemd-tmpfiles-clean.service
+Wed 2024-08-21 13:05:40 UTC 6h left           n/a                         n/a      motd-news.timer                motd-news.service
+Thu 2024-08-22 00:00:00 UTC 16h left          n/a                         n/a      dpkg-db-backup.timer           dpkg-db-backup.service
+Thu 2024-08-22 00:00:00 UTC 16h left          n/a                         n/a      logrotate.timer                logrotate.service
+Thu 2024-08-22 02:07:28 UTC 19h left          n/a                         n/a      apt-daily.timer                apt-daily.service
+Thu 2024-08-22 06:41:27 UTC 23h left          n/a                         n/a      apt-daily-upgrade.timer        apt-daily-upgrade.service
+Thu 2024-08-22 06:54:30 UTC 23h left          Wed 2024-08-21 06:54:30 UTC 7min ago update-notifier-download.timer update-notifier-download.serv>
+Thu 2024-08-22 11:42:33 UTC 1 day 4h left     n/a                         n/a      man-db.timer                   man-db.service
+Sun 2024-08-25 03:10:46 UTC 3 days left       n/a                         n/a      e2scrub_all.timer              e2scrub_all.service
+Mon 2024-08-26 01:36:08 UTC 4 days left       n/a                         n/a      fstrim.timer                   fstrim.service
+Thu 2024-08-29 13:59:06 UTC 1 week 1 day left n/a                         n/a      update-notifier-motd.timer     update-notifier-motd.service
+n/a                         n/a               n/a                         n/a      apport-autoreport.timer        apport-autoreport.service
+n/a                         n/a               n/a                         n/a      snapd.snap-repair.timer        snapd.snap-repair.service
+n/a                         n/a               n/a                         n/a      ua-timer.timer                 ua-timer.service
+
+15 timers listed.
+
+root@client:~# borg list borg@192.168.0.181:/var/backup/
+Enter passphrase for key ssh://borg@192.168.0.181/var/backup:
+etc-2024-08-21_06:59:01              Wed, 2024-08-21 06:59:09 [ffa7930dc5d7fb83e0afe5d1935ce263cf1dfe4e9cd0c9ccbe815eaddfd54c75]
+etc-2024-08-21_07:01:11              Wed, 2024-08-21 07:01:13 [bbb65f08a6f5ae4d17ac51a8d232da15ae92befe98f7572efb27b700a12915c3]
+etc-2024-08-21_07:01:30              Wed, 2024-08-21 07:01:31 [3479521ad6a771fe150641285cac59053d2286a4a118489b2c4e3c26e7865776]
+etc-2024-08-21_07:02:33              Wed, 2024-08-21 07:02:34 [5b5a0dc65b25a76f69937f00f858abaf74b661795dc3806c8563fd8b07d01abb]
+etc-2024-08-21_07:03:43              Wed, 2024-08-21 07:03:44 [7f6ac6af0ecb98b455985c114d36a028fb08d463443e9e3fdcab1f3b6bb57802]
+root@client:~# borg extract borg@192.168.0.181:/var/backup/::etc-2024-08-21_06:59:01 etc/hostname
+Enter passphrase for key ssh://borg@192.168.0.181/var/backup:
