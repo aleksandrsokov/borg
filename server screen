@@ -1,0 +1,155 @@
+root@server:~# apt update && apt install borgbackup -y
+Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+Get:3 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:6 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1731 kB]
+Get:7 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [287 kB]
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [13.2 kB]
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [2251 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy/universe Translation-en [5652 kB]
+Get:11 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [388 kB]
+Get:12 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [572 B]
+Get:13 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [890 kB]
+Get:14 http://archive.ubuntu.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]
+Get:15 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [217 kB]
+Get:16 http://archive.ubuntu.com/ubuntu jammy/multiverse Translation-en [112 kB]
+Get:17 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B]
+Get:18 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1987 kB]
+Get:19 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [175 kB]
+Get:20 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [19.0 kB]
+Get:21 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [37.2 kB]
+Get:22 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [7588 B]
+Get:23 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [228 B]
+Get:24 http://archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [348 kB]
+Get:25 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [17.8 kB]
+Get:26 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [2384 kB]
+Get:27 http://archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [410 kB]
+Get:28 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 c-n-f Metadata [604 B]
+Get:29 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1112 kB]
+Get:30 http://archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [260 kB]
+Get:31 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [26.0 kB]
+Get:32 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [43.3 kB]
+Get:33 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [10.8 kB]
+Get:34 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [444 B]
+Get:35 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [67.1 kB]
+Get:36 http://archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [11.0 kB]
+Get:37 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Get:38 http://archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:39 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [28.8 kB]
+Get:40 http://archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16.5 kB]
+Get:41 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [672 B]
+Get:42 http://archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 33.3 MB in 23s (1423 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+45 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libfuse2 python3-async-generator python3-llfuse python3-msgpack python3-outcome python3-packaging python3-pyfuse3 python3-sniffio
+  python3-sortedcontainers python3-trio
+Suggested packages:
+  borgbackup-doc python-llfuse-doc python-sortedcontainers-doc
+The following NEW packages will be installed:
+  borgbackup libfuse2 python3-async-generator python3-llfuse python3-msgpack python3-outcome python3-packaging python3-pyfuse3 python3-sniffio
+  python3-sortedcontainers python3-trio
+0 upgraded, 11 newly installed, 0 to remove and 45 not upgraded.
+Need to get 1743 kB of archives.
+After this operation, 7207 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy/main amd64 python3-msgpack amd64 1.0.3-1build1 [67.8 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/main amd64 python3-packaging all 21.3-1 [30.7 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy/universe amd64 borgbackup amd64 1.2.0-1 [792 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libfuse2 amd64 2.9.9-5ubuntu3 [90.3 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy/universe amd64 python3-async-generator all 1.10-3 [17.5 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy/universe amd64 python3-llfuse amd64 1.3.8+dfsg-2build1 [291 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy/universe amd64 python3-outcome all 1.1.0-1 [5820 B]
+Get:8 http://archive.ubuntu.com/ubuntu jammy/universe amd64 python3-sniffio all 1.2.0-1 [6438 B]
+Get:9 http://archive.ubuntu.com/ubuntu jammy/main amd64 python3-sortedcontainers all 2.1.0-2 [27.3 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy/universe amd64 python3-trio all 0.19.0-1 [238 kB]
+Get:11 http://archive.ubuntu.com/ubuntu jammy/universe amd64 python3-pyfuse3 amd64 3.2.0-3build1 [176 kB]
+Fetched 1743 kB in 2s (1018 kB/s)
+Selecting previously unselected package python3-msgpack.
+(Reading database ... 64049 files and directories currently installed.)
+Preparing to unpack .../00-python3-msgpack_1.0.3-1build1_amd64.deb ...
+Unpacking python3-msgpack (1.0.3-1build1) ...
+Selecting previously unselected package python3-packaging.
+Preparing to unpack .../01-python3-packaging_21.3-1_all.deb ...
+Unpacking python3-packaging (21.3-1) ...
+Selecting previously unselected package borgbackup.
+Preparing to unpack .../02-borgbackup_1.2.0-1_amd64.deb ...
+Unpacking borgbackup (1.2.0-1) ...
+Selecting previously unselected package libfuse2:amd64.
+Preparing to unpack .../03-libfuse2_2.9.9-5ubuntu3_amd64.deb ...
+Unpacking libfuse2:amd64 (2.9.9-5ubuntu3) ...
+Selecting previously unselected package python3-async-generator.
+Preparing to unpack .../04-python3-async-generator_1.10-3_all.deb ...
+Unpacking python3-async-generator (1.10-3) ...
+Selecting previously unselected package python3-llfuse:amd64.
+Preparing to unpack .../05-python3-llfuse_1.3.8+dfsg-2build1_amd64.deb ...
+Unpacking python3-llfuse:amd64 (1.3.8+dfsg-2build1) ...
+Selecting previously unselected package python3-outcome.
+Preparing to unpack .../06-python3-outcome_1.1.0-1_all.deb ...
+Unpacking python3-outcome (1.1.0-1) ...
+Selecting previously unselected package python3-sniffio.
+Preparing to unpack .../07-python3-sniffio_1.2.0-1_all.deb ...
+Unpacking python3-sniffio (1.2.0-1) ...
+Selecting previously unselected package python3-sortedcontainers.
+Preparing to unpack .../08-python3-sortedcontainers_2.1.0-2_all.deb ...
+Unpacking python3-sortedcontainers (2.1.0-2) ...
+Selecting previously unselected package python3-trio.
+Preparing to unpack .../09-python3-trio_0.19.0-1_all.deb ...
+Unpacking python3-trio (0.19.0-1) ...
+Selecting previously unselected package python3-pyfuse3.
+Preparing to unpack .../10-python3-pyfuse3_3.2.0-3build1_amd64.deb ...
+Unpacking python3-pyfuse3 (3.2.0-3build1) ...
+Setting up python3-sniffio (1.2.0-1) ...
+Setting up python3-outcome (1.1.0-1) ...
+Setting up python3-async-generator (1.10-3) ...
+Setting up python3-sortedcontainers (2.1.0-2) ...
+Setting up libfuse2:amd64 (2.9.9-5ubuntu3) ...
+Setting up python3-packaging (21.3-1) ...
+Setting up python3-llfuse:amd64 (1.3.8+dfsg-2build1) ...
+Setting up python3-trio (0.19.0-1) ...
+Setting up python3-msgpack (1.0.3-1build1) ...
+Setting up python3-pyfuse3 (3.2.0-3build1) ...
+Setting up borgbackup (1.2.0-1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.8) ...
+Scanning processes...
+Scanning linux images...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@server:~# adduser --disabled-password borg
+Adding user `borg' ...
+Adding new group `borg' (1002) ...
+Adding new user `borg' (1002) with group `borg' ...
+Creating home directory `/home/borg' ...
+Copying files from `/etc/skel' ...
+Changing the user information for borg
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+root@server:~# mkdir /var/backup
+root@server:~# chown borg: /var/backup/
+root@server:~# su - borg
+borg@server:~$ mkdir .ssh
+borg@server:~$ touch .ssh/authorized_keys
+borg@server:~$ chmod 700 .ssh
+borg@server:~$ chmod 600 .ssh/authorized_keys
+borg@server:~$ nano .ssh/authorized_keys
